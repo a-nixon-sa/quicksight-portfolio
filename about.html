@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>About - QuickSight</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <header>
+
     <h1>QuickSight</h1>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
     </nav>
+
 </header>
 
 <main>
+
     <h2>About QuickSight</h2>
 
     <p>
-        QuickSight is a healthcare-focused web application created as a student project
-        to explore patient management, insurance workflow systems, and healthcare-based
-        web design solutions.
+        QuickSight is a healthcare-focused software concept created to explore
+        insurance verification workflows, patient management systems, and
+        healthcare-centered web application design.
     </p>
 
     <p>
-        This portfolio demonstration showcases responsive web design, navigation,
-        interface organization, and foundational database-connected application concepts.
+        This project demonstrates responsive web development, dynamic data retrieval,
+        and simulated insurance eligibility verification using JavaScript and
+        database-oriented design concepts.
     </p>
+
+    <hr>
+
+    <h2>Insurance Verification Demo</h2>
+
+    <p>
+        Enter a sample member ID below to simulate a vision insurance eligibility check.
+    </p>
+
+    <p>
+        <strong>Try:</strong> VSP1001 or EYEMED2001
+    </p>
+
+    <input type="text"
+           id="memberId"
+           placeholder="Enter Member ID">
+
+    <br><br>
+
+    <button onclick="verifyInsurance()">
+        Verify Benefits
+    </button>
+
+    <br><br>
+
+    <div id="results"></div>
+
 </main>
 
 <footer>
