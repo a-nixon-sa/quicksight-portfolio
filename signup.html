@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Sign Up - QuickSight</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <header>
+
     <h1>QuickSight</h1>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
     </nav>
+
 </header>
 
 <main>
+
     <h2>Create Account</h2>
 
+    <p>
+        Create a demo QuickSight account below.
+    </p>
+
     <form>
-        <label>Full Name</label><br>
-        <input type="text" placeholder="Enter Full Name"><br><br>
 
-        <label>Email</label><br>
-        <input type="email" placeholder="Enter Email"><br><br>
+        <label>Full Name</label>
+        <br>
 
-        <label>Password</label><br>
-        <input type="password" placeholder="Create Password"><br><br>
+        <input type="text"
+               placeholder="Enter Full Name">
 
-        <label>Re-enter Password</label><br>
-        <input type="password" placeholder="Re-enter Password"><br><br>
+        <br><br>
 
-        <button type="button">Create Account</button>
+        <label>Email</label>
+        <br>
+
+        <input type="email"
+               placeholder="Enter Email">
+
+        <br><br>
+
+        <label>Password</label>
+        <br>
+
+        <input type="password"
+               placeholder="Create Password">
+
+        <br><br>
+
+        <label>Re-enter Password</label>
+        <br>
+
+        <input type="password"
+               placeholder="Re-enter Password">
+
+        <br><br>
+
+        <button type="button">
+            Create Account
+        </button>
+
+        <br><br>
+
+        <button type="button"
+                onclick="encryptPassword()">
+
+            Encrypt Password
+        </button>
+
+        <br><br>
+
+        <div id="encryptedResult"></div>
+
     </form>
 
-    <p><em>Portfolio demonstration only — account creation disabled.</em></p>
+    <br>
+
+    <p>
+        <em>
+            Portfolio demonstration only — account creation functionality disabled.
+        </em>
+    </p>
+
 </main>
 
 <footer>
