@@ -1,11 +1,62 @@
-<section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verification - QuickSight</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>QuickSight</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="verification.html">Verification</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<main>
+
     <h2>Insurance Verification Demo</h2>
 
-    <input type="text" id="memberId" placeholder="Enter Member ID">
+    <p>
+        Enter a sample member ID to simulate insurance verification.
+    </p>
+
+    <p>
+        <strong>Try:</strong> VSP1001 or EYEMED2001
+    </p>
+
+    <input type="text"
+           id="memberId"
+           placeholder="Enter Member ID">
+
+    <br><br>
 
     <button onclick="verifyInsurance()">
         Verify Benefits
     </button>
 
+    <br><br>
+
     <div id="results"></div>
-</section>
+
+</main>
+
+<footer>
+    <p>Portfolio Demonstration Project</p>
+</footer>
+
+</body>
+</html>
