@@ -44,3 +44,44 @@ function encryptPassword() {
         <p><strong>Encoded:</strong> ${encrypted}</p>
         `;
 }
+function validateSignup() {
+
+    const email =
+        document.getElementById("email").value;
+
+    const password =
+        document.getElementById("password").value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    const message =
+        document.getElementById("signupMessage");
+
+    if (!email.includes("@") || !email.includes(".")) {
+
+        message.innerHTML =
+            "<p style='color:red;'>Please enter a valid email address.</p>";
+
+        return;
+    }
+
+    if (password !== confirmPassword) {
+
+        message.innerHTML =
+            "<p style='color:red;'>Passwords do not match.</p>";
+
+        return;
+    }
+
+    if (password.length < 6) {
+
+        message.innerHTML =
+            "<p style='color:red;'>Password must be at least 6 characters.</p>";
+
+        return;
+    }
+
+    message.innerHTML =
+        "<p style='color:green;'>Account validation successful.</p>";
+}
