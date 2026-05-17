@@ -26,3 +26,21 @@ async function verifyInsurance() {
         results.innerHTML = "<p>No insurance record found.</p>";
     }
 }
+
+function encryptPassword() {
+
+    const password =
+        document.querySelectorAll('input[type="password"]')[0].value;
+
+    const encrypted =
+        btoa(password);
+
+    document.getElementById("encryptedResult").innerHTML =
+        `
+        <h3>Encrypted Password Preview</h3>
+
+        <p><strong>Original:</strong> ${password}</p>
+
+        <p><strong>Encoded:</strong> ${encrypted}</p>
+        `;
+}
