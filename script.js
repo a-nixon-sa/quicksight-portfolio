@@ -46,6 +46,9 @@ function encryptPassword() {
 }
 function validateSignup() {
 
+    const fullName =
+    document.getElementById("fullName").value;
+
     const email =
         document.getElementById("email").value;
 
@@ -57,6 +60,14 @@ function validateSignup() {
 
     const message =
         document.getElementById("signupMessage");
+
+    if (fullName.trim() === "") {
+
+    message.innerHTML =
+        "<p style='color:red;'>Please enter your full name.</p>";
+
+    return;
+}
 
     if (!email.includes("@") || !email.includes(".")) {
 
