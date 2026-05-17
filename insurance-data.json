@@ -1,0 +1,20 @@
+[
+  {
+    "memberId": "VSP1001",
+    "provider": "VSP",
+    "plan": "VSP Signature",
+    "copay": "$20 Exam Copay",
+    "frameAllowance": "$180",
+    "contactLensAllowance": "$150",
+    "eligibility": "Active"
+  },
+  {
+    "memberId": "EYEMED2001",
+    "provider": "EyeMed",
+    "plan": "EyeMed Insight",
+    "copay": "$10 Exam Copay",
+    "frameAllowance": "$200",
+    "contactLensAllowance": "$180",
+    "eligibility": "Active"
+  }
+]
